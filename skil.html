@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Teknis - Kadek Bagiantara Putra</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skill-list {
+            list-style-type: none;
+            /* remove default bullets */
+            padding-left: 0;
+            margin-left: 10px;
+        }
+
+        .skill-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .skill-list li::before {
+            content: "➔";
+            /* Custom bullet */
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Skill Teknis</h1>
+        </div>
+        <div class="content" style="padding: 20px;">
+            <p style="margin-bottom: 15px;">Berikut ini adalah daftar kemampuan (skill teknis) yang saya kuasai:</p>
+            <ul class="skill-list">
+                <li>Megambel</li>
+                <li>Menggambar</li>
+                <li>Main game mlbb</li>
+                <li>Masak</li>
+                <li>Pengrajin</li>
+                <li>Membuat layangan</li>
+            </ul>
+            <br>
+            <a href="index.html" class="btn-wa" style="background: #007bff;">Kembali ke Beranda</a>
+        </div>
+        <footer>
+            <p>&copy; 2026 Kadek Bagiantara Putra</p>
+        </footer>
+    </div>
+</body>
+
+</html>
