@@ -2,34 +2,141 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendidikan - Kadek Bagiantara Putra</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendidikan - Kadek Bagiantara Putra</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#007bff,#00c6ff);
+    margin:0;
+}
+
+/* container */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+}
+
+/* header */
+.header{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* education list */
+.education-list{
+    margin-top:25px;
+}
+
+/* card pendidikan */
+.edu-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.edu-card:hover{
+    transform:translateY(-5px);
+}
+
+/* icon */
+.edu-icon{
+    font-size:30px;
+}
+
+/* text */
+.edu-text{
+    font-size:16px;
+    font-weight:500;
+}
+
+/* tombol kembali */
+.btn-back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn-back:hover{
+    background:#0056b3;
+}
+
+/* footer */
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:white;
+}
+
+</style>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Riwayat Pendidikan</h1>
-        </div>
-        <div class="content" style="padding: 20px;">
-            <p style="margin-bottom: 15px;">Berikut adalah tahapan perjalanan pendidikan saya dari awal hingga saat ini:
-            </p>
-            <ol type="I" style="margin-left: 20px; line-height: 1.8; font-weight: 500; font-size: 16px;">
-                <li>TK Windu Kencana</li>
-                <li>SD Negeri 5 Penatih</li>
-                <li>SMP PGRI 9 Denpasar</li>
-                <li>SMK Negeri 1 Denpasar</li>
-                <li>Universitas Hindu Negeri I Gusti Bagus Sugriwa Denpasar (Sekarang)</li>
-            </ol>
-            <br>
-            <a href="index.html" class="btn-wa" style="background: #007bff;">Kembali ke Beranda</a>
-        </div>
-        <footer>
-            <p>&copy; 2026 Kadek Bagiantara Putra</p>
-        </footer>
-    </div>
-</body>
 
+<div class="container">
+
+<div class="header">
+<h1>🎓 Riwayat Pendidikan</h1>
+<p>Berikut perjalanan pendidikan saya dari awal hingga sekarang</p>
+</div>
+
+<div class="education-list">
+
+<div class="edu-card">
+<div class="edu-icon">🧸</div>
+<div class="edu-text">TK Windu Kencana</div>
+</div>
+
+<div class="edu-card">
+<div class="edu-icon">🏫</div>
+<div class="edu-text">SD Negeri 5 Penatih</div>
+</div>
+
+<div class="edu-card">
+<div class="edu-icon">📚</div>
+<div class="edu-text">SMP PGRI 9 Denpasar</div>
+</div>
+
+<div class="edu-card">
+<div class="edu-icon">💻</div>
+<div class="edu-text">SMK Negeri 1 Denpasar</div>
+</div>
+
+<div class="edu-card">
+<div class="edu-icon">🎓</div>
+<div class="edu-text">Universitas Hindu Negeri I Gusti Bagus Sugriwa Denpasar (Sekarang)</div>
+</div>
+
+</div>
+
+<div style="text-align:center;">
+<a href="index.html" class="btn-back">Kembali ke Beranda</a>
+</div>
+
+<footer>
+<p>&copy; 2026 Kadek Bagiantara Putra</p>
+</footer>
+
+</div>
+
+</body>
 </html>

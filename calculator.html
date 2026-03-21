@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Sederhana</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#007bff,#00c6ff);
+    font-family: Arial;
+}
+
+/* Box calculator */
+.calculator{
+    width:300px;
+    background:#222;
+    padding:20px;
+    border-radius:12px;
+    margin:40px auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Layar calculator */
+.display{
+    width:100%;
+    height:60px;
+    background:#000;
+    color:#0f0;
+    font-size:28px;
+    text-align:right;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    margin-bottom:15px;
+}
+
+/* Grid tombol */
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+
+/* Tombol umum */
+.buttons button{
+    padding:15px;
+    font-size:18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* Tombol angka */
+.num{
+    background:#444;
+    color:white;
+}
+
+/* Tombol operasi */
+.op{
+    background:#ff9500;
+    color:white;
+}
+
+/* Tombol clear */
+.clear{
+    background:#ff3b30;
+    color:white;
+}
+
+/* Tombol sama dengan */
+.equal{
+    background:#34c759;
+    color:white;
+    grid-column: span 2;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>🧮 KALKULATOR</h1>
+</div>
+
+<div class="calculator">
+
+<input type="text" id="display" class="display" disabled>
+
+<div class="buttons">
+
+<button class="clear" onclick="clearDisplay()">C</button>
+<button class="op" onclick="append('/')">÷</button>
+<button class="op" onclick="append('*')">×</button>
+<button class="op" onclick="append('-')">-</button>
+
+<button class="num" onclick="append('7')">7</button>
+<button class="num" onclick="append('8')">8</button>
+<button class="num" onclick="append('9')">9</button>
+<button class="op" onclick="append('+')">+</button>
+
+<button class="num" onclick="append('4')">4</button>
+<button class="num" onclick="append('5')">5</button>
+<button class="num" onclick="append('6')">6</button>
+<button class="num" onclick="calculate()">=</button>
+
+<button class="num" onclick="append('1')">1</button>
+<button class="num" onclick="append('2')">2</button>
+<button class="num" onclick="append('3')">3</button>
+<button class="num" onclick="append('0')">0</button>
+
+</div>
+
+</div>
+
+<div class="contact-box" style="margin-top:20px;">
+<a href="index.html" class="btn-wa">Kembali ke Biodata</a>
+</div>
+
+<footer>
+<p>&copy; 2026 Kadek Bagiantara Putra</p>
+</footer>
+
+</div>
+
+<script>
+
+function append(value){
+document.getElementById("display").value += value;
+}
+
+function clearDisplay(){
+document.getElementById("display").value = "";
+}
+
+function calculate(){
+try{
+document.getElementById("display").value = eval(document.getElementById("display").value);
+}
+catch{
+document.getElementById("display").value = "Error";
+}
+}
+
+</script>
+
+</body>
+</html>

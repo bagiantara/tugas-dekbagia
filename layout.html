@@ -2,147 +2,178 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Layout - Kadek Bagiantara Putra</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Layout - Kadek Bagiantara Putra</title>
 
-        table.layout {
-            width: 90%;
-            max-width: 1000px;
-            margin: 40px auto;
-            border-collapse: collapse;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            /* Prevent sharp corners if border radius is applied */
-        }
+<style>
 
-        td {
-            border: 1px solid #ddd;
-            padding: 20px;
-        }
+body{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+}
 
-        .header {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 30px 20px;
-        }
+/* layout table */
+table.layout{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
-        .sidebar {
-            width: 25%;
-            background-color: #f8f9fa;
-            vertical-align: top;
-            border-right: 2px solid #ddd;
-        }
+/* header */
+.header{
+    background:linear-gradient(90deg,#007bff,#00c6ff);
+    color:white;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    padding:35px;
+    letter-spacing:2px;
+}
 
-        .main-content {
-            width: 75%;
-            vertical-align: top;
-            line-height: 1.6;
-            padding: 40px;
-        }
+/* sidebar */
+.sidebar{
+    width:25%;
+    background:#f8f9fa;
+    vertical-align:top;
+    padding:25px;
+    border-right:2px solid #eee;
+}
 
-        .footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 15px 20px;
-            font-size: 14px;
-        }
+/* sidebar title */
+.sidebar h3{
+    margin-top:0;
+    border-bottom:3px solid #007bff;
+    padding-bottom:10px;
+}
 
-        ul.nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+/* navigation */
+ul.nav{
+    list-style:none;
+    padding:0;
+}
 
-        ul.nav li {
-            margin-bottom: 15px;
-        }
+ul.nav li{
+    margin-bottom:12px;
+}
 
-        ul.nav a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: 600;
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
+ul.nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    display:block;
+    padding:10px;
+    border-radius:6px;
+    transition:0.3s;
+}
 
-        ul.nav a:hover {
-            color: white;
-            background-color: #007bff;
-        }
+/* hover menu */
+ul.nav a:hover{
+    background:#007bff;
+    color:white;
+    transform:translateX(5px);
+}
 
-        h2 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-    </style>
+/* main content */
+.main-content{
+    width:75%;
+    padding:40px;
+    line-height:1.7;
+}
+
+.main-content h2{
+    color:#007bff;
+    margin-bottom:20px;
+}
+
+/* list */
+.main-content ol{
+    margin-left:20px;
+}
+
+/* footer */
+.footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+}
+
+/* efek hover card */
+table.layout:hover{
+    transform:scale(1.01);
+    transition:0.3s;
+}
+
+</style>
 </head>
 
 <body>
 
-    <table class="layout">
-        <!-- Header Section -->
-        <tr>
-            <td colspan="2" class="header">
-                HEADER WEBSITE
-            </td>
-        </tr>
+<table class="layout">
 
-        <!-- Middle Section -->
-        <tr>
-            <!-- Sidebar Section -->
-            <td class="sidebar">
-                <h3 style="margin-top: 0; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px;">
-                    Sidebar Menu</h3>
-                <ul class="nav">
-                    <li><a href="index.html">🏡 Beranda</a></li>
-                    <li><a href="pendidikan.html">🎓 Profil Pendidikan</a></li>
-                    <li><a href="skil.html">🛠️ Skill Teknis</a></li>
-                </ul>
-            </td>
+<tr>
+<td colspan="2" class="header">
+🌐 HEADER WEBSITE
+</td>
+</tr>
 
-            <!-- Main Content Section -->
-            <td class="main-content">
-                <h2>Selamat Datang di Tampilan Layout</h2>
-                <p>Bagian ini adalah <strong>Main Content</strong>, yang merupakan tempat menaruh isi konten utama pada
-                    website kita. Di bagian ini biasanya pengunjung akan menghabiskan waktu mereka untuk membaca maupun
-                    melihat detail spesifik dari halaman bersangkutan.</p>
-                <p>Menurut instruksi, kita membuat struktur dasar website menggunakan tag <code>&lt;table&gt;</code>
-                    HTML. Komponen layout yang dirancang terdiri dari:</p>
-                <ol style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
-                    <li><strong>Header:</strong> Di bagian atas sebagai penanda brand atau judul.</li>
-                    <li><strong>Sidebar:</strong> Berada di kiri, berguna sebagai area navigasi atau fitur terpisah.
-                    </li>
-                    <li><strong>Main Content:</strong> Area paling luas yang memuat konten spesifik per halamannya.</li>
-                    <li><strong>Footer:</strong> Bagian bawah halaman untuk keterangan lisensi atau tautan penutup.</li>
-                </ol>
-            </td>
-        </tr>
+<tr>
 
-        <!-- Footer Section -->
-        <tr>
-            <td colspan="2" class="footer">
-                FOOTER &copy; 2026 Kadek Bagiantara Putra - Desain Layout Tabel
-            </td>
-        </tr>
-    </table>
+<td class="sidebar">
+
+<h3>📋 Sidebar Menu</h3>
+
+<ul class="nav">
+<li><a href="index.html">🏡 Beranda</a></li>
+<li><a href="pendidikan.html">🎓 Profil Pendidikan</a></li>
+<li><a href="skil.html">🛠️ Skill Teknis</a></li>
+<li><a href="form.html">📝 Form</a></li>
+<li><a href="calculator.html">🧮 Calculator</a></li>
+</ul>
+
+</td>
+
+<td class="main-content">
+
+<h2>Selamat Datang di Tampilan Layout</h2>
+
+<p>
+Bagian ini adalah <b>Main Content</b>, yaitu tempat menampilkan isi utama dari sebuah website.
+Pada bagian ini biasanya pengunjung membaca informasi yang ingin disampaikan oleh pemilik website.
+</p>
+
+<p>
+Pada halaman ini kita membuat struktur dasar website menggunakan tag <b>table</b> sesuai dengan
+instruksi tugas. Struktur layout yang digunakan terdiri dari beberapa bagian utama:
+</p>
+
+<ol>
+<li><b>Header</b> → bagian atas yang berisi judul website.</li>
+<li><b>Sidebar</b> → bagian kiri yang berisi menu navigasi.</li>
+<li><b>Main Content</b> → bagian utama yang berisi informasi halaman.</li>
+<li><b>Footer</b> → bagian bawah untuk informasi penutup website.</li>
+</ol>
+
+</td>
+
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+FOOTER © 2026 Kadek Bagiantara Putra - Desain Layout Tabel
+</td>
+</tr>
+
+</table>
 
 </body>
-
 </html>

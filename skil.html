@@ -2,62 +2,163 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill Teknis - Kadek Bagiantara Putra</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .skill-list {
-            list-style-type: none;
-            /* remove default bullets */
-            padding-left: 0;
-            margin-left: 10px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Teknis - Kadek Bagiantara Putra</title>
+<link rel="stylesheet" href="style.css">
 
-        .skill-list li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            font-size: 16px;
-            font-weight: 500;
-        }
+<style>
 
-        .skill-list li::before {
-            content: "➔";
-            /* Custom bullet */
-            color: #007bff;
-            font-weight: bold;
-            font-size: 18px;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-    </style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#007bff,#00c6ff);
+    margin:0;
+}
+
+/* container */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+}
+
+/* header */
+.header{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* skill section */
+.skill-section{
+    margin-top:25px;
+}
+
+/* skill card */
+.skill-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+/* skill title */
+.skill-title{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+/* progress bar */
+.skill-bar{
+    background:#ddd;
+    height:10px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-progress{
+    height:100%;
+    background:#007bff;
+}
+
+/* tombol kembali */
+.btn-back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn-back:hover{
+    background:#0056b3;
+}
+
+/* footer */
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:white;
+}
+
+</style>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Skill Teknis</h1>
-        </div>
-        <div class="content" style="padding: 20px;">
-            <p style="margin-bottom: 15px;">Berikut ini adalah daftar kemampuan (skill teknis) yang saya kuasai:</p>
-            <ul class="skill-list">
-                <li>Megambel</li>
-                <li>Menggambar</li>
-                <li>Main game mlbb</li>
-                <li>Masak</li>
-                <li>Pengrajin</li>
-                <li>Membuat layangan</li>
-            </ul>
-            <br>
-            <a href="index.html" class="btn-wa" style="background: #007bff;">Kembali ke Beranda</a>
-        </div>
-        <footer>
-            <p>&copy; 2026 Kadek Bagiantara Putra</p>
-        </footer>
-    </div>
-</body>
 
+<div class="container">
+
+<div class="header">
+<h1>🛠 Skill Teknis</h1>
+<p>Berikut adalah beberapa kemampuan yang saya miliki</p>
+</div>
+
+<div class="skill-section">
+
+<div class="skill-card">
+<div class="skill-title">🎵 Megambel</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<div class="skill-title">🎨 Menggambar</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:75%"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<div class="skill-title">🎮 Main Game MLBB</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<div class="skill-title">🍳 Memasak</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<div class="skill-title">🪵 Pengrajin</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill-card">
+<div class="skill-title">🪁 Membuat Layangan</div>
+<div class="skill-bar">
+<div class="skill-progress" style="width:85%"></div>
+</div>
+</div>
+
+</div>
+
+<div style="text-align:center;">
+<a href="index.html" class="btn-back">Kembali ke Beranda</a>
+</div>
+
+<footer>
+<p>&copy; 2026 Kadek Bagiantara Putra</p>
+</footer>
+
+</div>
+
+</body>
 </html>

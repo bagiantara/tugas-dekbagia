@@ -2,73 +2,208 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Biodata - Kadek Bagiantara Putra</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Biodata - Kadek Bagiantara Putra</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#007bff,#00c6ff);
+    margin:0;
+}
+
+/* Navbar */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    padding:12px;
+    text-align:center;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:5px;
+    padding:8px 15px;
+    border-radius:5px;
+    background:#007bff;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:#0056b3;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:120px auto 40px;
+}
+
+/* Header */
+.header{
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Foto profil */
+.profile-pic{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #007bff;
+    object-fit:cover;
+}
+
+/* Table biodata */
+.info-table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.info-table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.info-table tr:hover{
+    background:#f2f2f2;
+}
+
+/* Contact box */
+.contact-box{
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-wa{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn-wa:hover{
+    background:#1ebc59;
+}
+
+/* Map */
+.map-frame{
+    width:100%;
+    height:350px;
+    border:none;
+    margin-top:15px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <img src="foto.jpeg" alt="Foto Profil" class="profile-pic">
-            <h1>BIODATA MAHASISWA</h1>
-        </div>
+<!-- Navbar -->
+<div class="navbar">
+<a href="pendidikan.html">🎓 Pendidikan</a>
+<a href="skil.html">🛠 Skill</a>
+<a href="layout.html">📄 Layout</a>
+<a href="form.html">📝 Form</a>
+<a href="calculator.html">🧮 Calculator</a>
+</div>
 
-        <table class="info-table">
-            <tr>
-                <td>Nama Lengkap</td>
-                <td>KADEK BAGIANTARA PUTRA</td>
-            </tr>
-            <tr>
-                <td>NIM</td>
-                <td>2413231012</td>
-            </tr>
-            <tr>
-                <td>Program Studi</td>
-                <td>Informatika</td>
-            </tr>
-            <tr>
-                <td>Universitas</td>
-                <td>UHN I Gusti Bagus Sugriwa Denpasar</td>
-            </tr>
-            <tr>
-                <td>Semester / Kelas</td>
-                <td>Semester 4 / Kelas Denpasar</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>Jln Sulastri GG XXXIV no 3</td>
-            </tr>
-        </table>
+<div class="container">
 
-        <!-- Navigasi Tambahan -->
-        <div class="contact-box" style="margin-top: 20px; padding: 20px;">
-            <h3 style="margin-bottom: 15px;">Menu Navigasi</h3>
-            <a href="pendidikan.html" class="btn-wa" style="background: #007bff; margin-right: 10px;">Riwayat
-                Pendidikan</a>
-            <a href="skil.html" class="btn-wa" style="background: #007bff; margin-right: 10px;">Skill Teknis</a>
-            <a href="layout.html" class="btn-wa" style="background: #007bff;">Halaman Layout</a>
-        </div>
+<div class="header">
+<img src="foto.jpeg" alt="Foto Profil" class="profile-pic">
+<h1>BIODATA MAHASISWA</h1>
+</div>
 
-        <div class="contact-box">
-            <h3>Hubungi Saya</h3>
-            <p>WhatsApp: 6285738359473</p>
-            <a href="https://wa.me/6285738359473" class="btn-wa" target="_blank">Chat WhatsApp</a>
-        </div>
+<table class="info-table">
+<tr>
+<td>Nama Lengkap</td>
+<td>KADEK BAGIANTARA PUTRA</td>
+</tr>
 
-        <h3>Lokasi Alamat</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.635836881268!2d115.22896!3d-8.65213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f73966085a3%3A0x6bba436c6a461b2b!2sJl.%20Sulastri%20No.3%2C%20Kesiman%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080237!5e0!3m2!1sid!2sid!4v1716300000000!5m2!1sid!2sid"
-            class="map-frame" allowfullscreen="" loading="lazy">
-        </iframe>
+<tr>
+<td>NIM</td>
+<td>2413231012</td>
+</tr>
 
-        <footer>
-            <p>&copy; 2026 Kadek Bagiantara Putra</p>
-        </footer>
-    </div>
+<tr>
+<td>Program Studi</td>
+<td>Informatika</td>
+</tr>
+
+<tr>
+<td>Universitas</td>
+<td>UHN I Gusti Bagus Sugriwa Denpasar</td>
+</tr>
+
+<tr>
+<td>Semester / Kelas</td>
+<td>Semester 4 / Kelas Denpasar</td>
+</tr>
+
+<tr>
+<td>Alamat</td>
+<td>Jln Sulastri GG XXXIV no 3</td>
+</tr>
+</table>
+
+<div class="contact-box">
+<h3>📞 Hubungi Saya</h3>
+<p>WhatsApp: 6285738359473</p>
+<a href="https://wa.me/6285738359473" class="btn-wa" target="_blank">Chat WhatsApp</a>
+</div>
+
+<div class="contact-box">
+<h3>📍 Lokasi Alamat</h3>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.635836881268!2d115.22896!3d-8.65213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f73966085a3%3A0x6bba436c6a461b2b!2sJl.%20Sulastri%20No.3%2C%20Kesiman%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080237!5e0!3m2!1sid!2sid!4v1716300000000!5m2!1sid!2sid"
+class="map-frame"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Kadek Bagiantara Putra</p>
+</footer>
+
+</div>
 
 </body>
-
 </html>
